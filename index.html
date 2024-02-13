@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" ></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="pridatForm">
+        <input type="text" class="nazev" placeholder="Název produktu">
+        <input type="number" class="cenaKus" placeholder="Cena za kus">
+        <input type="number" class="pocet" placeholder="Počet kusů">
+        <button class="potvrdButton"> Potvrdit </button>
+        <button onclick="zrus()" id="zrus">x</button>
+    </div>
+
+    <div id="Hledat">
+        <input type="text" placeholder="Hledaný produkt">
+        <button>Hledat</button>
+        <button onclick="zrusHledat()" id="zrusHled">x</button>
+    </div>
+
+    <div id="Nejdrazsi">
+        <label>Nejdrazsi Produkt je: </label>
+        <label id="nejdrazsiProdukt" ></label>
+    </div>
+
+
+    <button onclick="pridatForm()"> pridat produkt </button>
+    <button onclick="zacitHledat()">Hledat produkt</button>
+    <button onclick=""></button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Název</th>
+                <th>Cena za kus</th>
+                <th>Počet na skladě</th>
+            </tr>
+        </thead>
+        <tbody id="product-list">
+            
+        </tbody>
+</body>
+</html>
