@@ -8,29 +8,34 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="header">
+        <h1>Skladový systém</h1>
+    </div>
     <div id="pridatForm">
+        <h2>Přidat produkt</h2>
         <input type="text" class="nazev" placeholder="Název produktu">
         <input type="number" class="cenaKus" placeholder="Cena za kus">
         <input type="number" class="pocet" placeholder="Počet kusů">
-        <button class="potvrdButton"> Potvrdit </button>
-        <button onclick="zrus()" id="zrus">x</button>
+        <button class="potvrdButton" onclick="pridatProdukt()">Potvrdit</button>
+        <button class="zrus" onclick="zrus()">x</button>
     </div>
-
     <div id="Hledat">
-        <input type="text" placeholder="Hledaný produkt">
-        <button>Hledat</button>
-        <button onclick="zrusHledat()" id="zrusHled">x</button>
+        <h2>Hledat produkt</h2>
+        <input type="text" id="hledatInput" placeholder="Hledaný produkt">
+        <button onclick="hledatProdukt()">Hledat</button>
+        <button class="zrus" onclick="zrusHledat()">x</button>
     </div>
 
     <div id="Nejdrazsi">
-        <label>Nejdrazsi Produkt je: </label>
-        <label id="nejdrazsiProdukt" ></label>
+        <h2>Nejdražší produkt</h2>
+        <label>Nejdražší produkt je: </label>
+        <label id="nejdrazsiProdukt"></label>
+        <button class="zrus" onclick="zrusNejdrazsi()">x</button>
     </div>
 
-
-    <button onclick="pridatForm()"> pridat produkt </button>
+    <button onclick="pridatForm()">Přidat produkt</button>
     <button onclick="zacitHledat()">Hledat produkt</button>
-    <button onclick="nejdrazsi()">Nejdrazsi</button>
+    <button onclick="nejdrazsiForm()">Nejdražší produkt</button>
 
     <table>
         <thead>

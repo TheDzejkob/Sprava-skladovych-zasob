@@ -1,3 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(20,157,93,1) 35%, rgba(0,212,255,1) 100%);
+    
+}
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+#main {
+    margin: 20px;
+}
 table {
     width: 100%;
     border-collapse: collapse;
@@ -10,12 +27,60 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
-#pridatForm{
+#pridatForm {
+    margin-top: 20px;
     display: none;
 }
-#Hledat{
+#Hledat {
+    margin-top: 20px;
     display: none;
 }
-#Nejdrazsi{
+#Nejdrazsi {
+    margin-top: 20px;
     display: none;
 }
+.potvrdButton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.zrus {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button {
+    background-color: #4CAF50; /* Green background color */
+    border: none; /* No border */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Some padding */
+    text-align: center; /* Centered text */
+    display: inline-block; /* Inline-block display */
+    font-size: 16px; /* Font size */
+    margin: 5px; /* Some margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Animation for background color */
+  }
+  
+  button:hover {
+    background-color: #3e8e41; /* Darker green background color on hover */
+  }
+  
+  button:active {
+    background-color: #2b662a; /* Even darker green background color on click */
+  }
